@@ -1,3 +1,26 @@
-.hello {
-    color: red;
-  }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.show-dropdown {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.hide-dropdown {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+}
