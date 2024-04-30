@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dropdown Image Crousel</title>
+    <script defer src="./runtime.bundle.js"></script><script defer src="./main.bundle.js"></script></head>
+    <body>
+        <header>
+            <h1>Dropdown Menu -- Image Carousel</h1>
+
+            <div class="dropdown-btns">
+                <button class="toggle-menu">Dropdown Menu</button>
+                <button class="toggle-menu">Second Dropdown</button>
+                <button class="toggle-menu">Third Dropdown</button>
+                <button class="toggle-menu">Fourth Dropdown</button>
+            </div>
+        </header>
+
+        <div class="dropdown-menus">
+            <div class="dropdown-menu hide-menu">
+                <!-- MENU TASKS -->
+                <div class="menu-links">
+                    <a
+                        class="link menu-link select selected-link"
+                        data-link-index="0"
+                        data-title="all"
+                        href="#"
+                    >
+                        <i
+                            class="fa-solid fa-calendar-days menu-link-icon menu-icon select padding-right"
+                            data-link-index="0"
+                            data-title="all"
+                            data-icon="fa-calendar-days"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="0"
+                            data-title="all"
+                        >
+                            All
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="1"
+                        data-title="today"
+                    >
+                        <i
+                            class="fa-solid fa-calendar-day menu-link-icon menu-icon select padding-right"
+                            data-link-index="1"
+                            data-title="today"
+                            data-icon="fa-calendar-day"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="1"
+                            data-title="today"
+                        >
+                            Today
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="2"
+                        data-title="week"
+                    >
+                        <i
+                            class="fa-solid fa-calendar-week menu-link-icon menu-icon select padding-right"
+                            data-link-index="2"
+                            data-title="week"
+                            data-icon="fa-calendar-week"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="2"
+                            data-title="week"
+                        >
+                            Week
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="3"
+                        data-title="important"
+                    >
+                        <i
+                            class="fa-solid fa-star menu-link-icon menu-icon select padding-right"
+                            data-link-index="3"
+                            data-title="important"
+                            data-icon="fa-star"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="3"
+                            data-title="important"
+                        >
+                            Important
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="4"
+                        data-title="completed"
+                    >
+                        <i
+                            class="fa-regular fa-calendar-check menu-link-icon select padding-right"
+                            data-link-index="4"
+                            data-title="completed"
+                            data-icon="fa-calendar-check"
+                        ></i>
+                        <p
+                            class="menu-link-text select"
+                            data-link-index="4"
+                            data-title="completed"
+                        >
+                            Completed
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown-menu hide-menu">
+                <!-- MENU TASKS -->
+                <div class="menu-links">
+                    <a
+                        class="link menu-link select selected-link"
+                        data-link-index="0"
+                        data-title="all"
+                        href="#"
+                    >
+                        <i
+                            class="fa-solid fa-calendar-days menu-link-icon menu-icon select padding-right"
+                            data-link-index="0"
+                            data-title="all"
+                            data-icon="fa-calendar-days"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="0"
+                            data-title="all"
+                        >
+                            All
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="1"
+                        data-title="today"
+                    >
+                        <i
+                            class="fa-solid fa-calendar-day menu-link-icon menu-icon select padding-right"
+                            data-link-index="1"
+                            data-title="today"
+                            data-icon="fa-calendar-day"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="1"
+                            data-title="today"
+                        >
+                            Today
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="2"
+                        data-title="week"
+                    >
+                        <i
+                            class="fa-solid fa-calendar-week menu-link-icon menu-icon select padding-right"
+                            data-link-index="2"
+                            data-title="week"
+                            data-icon="fa-calendar-week"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="2"
+                            data-title="week"
+                        >
+                            Week
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="3"
+                        data-title="important"
+                    >
+                        <i
+                            class="fa-solid fa-star menu-link-icon menu-icon select padding-right"
+                            data-link-index="3"
+                            data-title="important"
+                            data-icon="fa-star"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="3"
+                            data-title="important"
+                        >
+                            Important
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="4"
+                        data-title="completed"
+                    >
+                        <i
+                            class="fa-regular fa-calendar-check menu-link-icon select padding-right"
+                            data-link-index="4"
+                            data-title="completed"
+                            data-icon="fa-calendar-check"
+                        ></i>
+                        <p
+                            class="menu-link-text select"
+                            data-link-index="4"
+                            data-title="completed"
+                        >
+                            Completed
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown-menu hide-menu">
+                <!-- MENU TASKS -->
+                <div class="menu-links">
+                    <a
+                        class="link menu-link select selected-link"
+                        data-link-index="0"
+                        data-title="all"
+                        href="#"
+                    >
+                        <i
+                            class="fa-solid fa-calendar-days menu-link-icon menu-icon select padding-right"
+                            data-link-index="0"
+                            data-title="all"
+                            data-icon="fa-calendar-days"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="0"
+                            data-title="all"
+                        >
+                            All
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="1"
+                        data-title="today"
+                    >
+                        <i
+                            class="fa-solid fa-calendar-day menu-link-icon menu-icon select padding-right"
+                            data-link-index="1"
+                            data-title="today"
+                            data-icon="fa-calendar-day"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="1"
+                            data-title="today"
+                        >
+                            Today
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="2"
+                        data-title="week"
+                    >
+                        <i
+                            class="fa-solid fa-calendar-week menu-link-icon menu-icon select padding-right"
+                            data-link-index="2"
+                            data-title="week"
+                            data-icon="fa-calendar-week"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="2"
+                            data-title="week"
+                        >
+                            Week
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="3"
+                        data-title="important"
+                    >
+                        <i
+                            class="fa-solid fa-star menu-link-icon menu-icon select padding-right"
+                            data-link-index="3"
+                            data-title="important"
+                            data-icon="fa-star"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="3"
+                            data-title="important"
+                        >
+                            Important
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="4"
+                        data-title="completed"
+                    >
+                        <i
+                            class="fa-regular fa-calendar-check menu-link-icon select padding-right"
+                            data-link-index="4"
+                            data-title="completed"
+                            data-icon="fa-calendar-check"
+                        ></i>
+                        <p
+                            class="menu-link-text select"
+                            data-link-index="4"
+                            data-title="completed"
+                        >
+                            Completed
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown-menu hide-menu">
+                <!-- MENU TASKS -->
+                <div class="menu-links">
+                    <a
+                        class="link menu-link select selected-link"
+                        data-link-index="0"
+                        data-title="all"
+                        href="#"
+                    >
+                        <i
+                            class="fa-solid fa-calendar-days menu-link-icon menu-icon select padding-right"
+                            data-link-index="0"
+                            data-title="all"
+                            data-icon="fa-calendar-days"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="0"
+                            data-title="all"
+                        >
+                            All
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="1"
+                        data-title="today"
+                    >
+                        <i
+                            class="fa-solid fa-calendar-day menu-link-icon menu-icon select padding-right"
+                            data-link-index="1"
+                            data-title="today"
+                            data-icon="fa-calendar-day"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="1"
+                            data-title="today"
+                        >
+                            Today
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="2"
+                        data-title="week"
+                    >
+                        <i
+                            class="fa-solid fa-calendar-week menu-link-icon menu-icon select padding-right"
+                            data-link-index="2"
+                            data-title="week"
+                            data-icon="fa-calendar-week"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="2"
+                            data-title="week"
+                        >
+                            Week
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="3"
+                        data-title="important"
+                    >
+                        <i
+                            class="fa-solid fa-star menu-link-icon menu-icon select padding-right"
+                            data-link-index="3"
+                            data-title="important"
+                            data-icon="fa-star"
+                        ></i>
+                        <p
+                            class="menu-link-text menu-text select"
+                            data-link-index="3"
+                            data-title="important"
+                        >
+                            Important
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="link menu-link select"
+                        data-link-index="4"
+                        data-title="completed"
+                    >
+                        <i
+                            class="fa-regular fa-calendar-check menu-link-icon select padding-right"
+                            data-link-index="4"
+                            data-title="completed"
+                            data-icon="fa-calendar-check"
+                        ></i>
+                        <p
+                            class="menu-link-text select"
+                            data-link-index="4"
+                            data-title="completed"
+                        >
+                            Completed
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- START OF IMAGE CAROUSEL CODE -->
+        <div class="carousel-wrap">
+            <div id="carouselContainer">
+                <div id="slidesContainer">
+                    <img src="images/idea1.PNG" class="image" alt="" />
+                    <img src="images/idea2.PNG" class="image" alt="" />
+                    <img src="images/idea3.PNG" class="image" alt="" />
+                    <img src="images/idea4.PNG" class="image" alt="" />
+                </div>
+            </div>
+            <div>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="buttons">
+                <button class="previous">Previous</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+    </body>
+</html>
